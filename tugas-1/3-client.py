@@ -16,7 +16,7 @@ try:
 
     # Create txt file if not exist
     try:
-        with open('tugas-1/3-client.txt', 'x') as f:
+        with open('/home/jovyan/work/tugas-progjar/tugas-1/3-client.txt', 'x') as f:
             logging.info("Creating file tugas-1/3-client.txt")
             f.write('INI ADALAH FILE YANG DIKIRIM QWERTYUIOPASDFGH\n')
             f.write('SECOND LINE YANG DIKIRIM')
@@ -28,7 +28,7 @@ try:
     # message = 'INI ADALAH DATA YANG DIKIRIM ABCDEFGHIJKLMNOPQ'
     # logging.info(f"sending {message}")
     message = ''
-    with open('tugas-1/3-client.txt', 'r') as f:
+    with open('/home/jovyan/work/tugas-progjar/tugas-1/3-client.txt', 'r') as f:
         logging.info("Reading file tugas-1/3-client.txt")
         message = f.read()
         logging.info(f"message: getting message from file {message}")
