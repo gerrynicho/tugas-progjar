@@ -54,7 +54,6 @@ def remote_get(filename=""):
     if (hasil['status']=='OK'):
         #proses file dalam bentuk base64 ke bentuk bytes
         namafile= hasil['data_namafile']
-        print(f"\n\n{isifile}")
         isifile = base64.b64decode(hasil['data_file'])
         fp = open(namafile,'wb+')
         fp.write(isifile)
