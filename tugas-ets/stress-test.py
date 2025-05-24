@@ -34,7 +34,12 @@ class Client:
             'upload' : 0,
             'get' : 0,
             'list' : 0
-        }    
+        }
+
+        self.server_config = {
+            'executor_type': 'thread',  # default executor type
+            'worker_pool_size': 20,  # default worker pool size
+        }
 
         if not os.path.exists('results'):
             os.makedirs('results')
@@ -42,6 +47,10 @@ class Client:
         if not os.path.exists('downloads'):
             os.makedirs('downloads')
     
+
+    def set_server_config(self):
+        self.server_config['executor_type'] = input("Enter Server's executor type (thread/process): ").strip().lower()
+        self.server_config['worker_pool_size'] = int(input("Enter Server's worker pool size: ").strip())
 
 
     def send_command(self, command_str):
@@ -371,10 +380,10 @@ class Client:
         
         with open(csv_filename, 'w', newline='') as csvfile:
             fieldnames = [
-                'Operasi', 'Volume (MB)', 'Jumlah client worker pool', 'Jumlah server worker pool', 
+                'Operasi', 'Volume File (MB)', 'Jumlah client worker pool', 
+                'Server executor type', 'Jumlah server worker pool', 
                 'Waktu total per client (s)', 'Throughput per client (MB/s)',
                 'Jumlah worker client sukses', 'Jumlah worker client gagal',
-                'Jumlah worker server sukses', 'Jumlah worker server gagal'
             ]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -383,9 +392,10 @@ class Client:
                 
                 row = {
                     'Operasi': operation.upper(),
-                    'Volume (MB)': stats['file_size_mb'],
+                    'Volume File (MB)': stats['file_size_mb'],
                     'Jumlah client worker pool': stats['client_pool_size'],
-                    'Jumlah server worker pool': 20,  # Assuming default server pool size
+                    'Server executor type': self.server_config['executor_type'],
+                    'Jumlah server worker pool': self.server_config['worker_pool_size'],
                     'Waktu total per client (s)': f"{stats['avg_duration']:.2f}",
                     'Throughput per client (MB/s)': f"{stats['avg_throughput']/1024/1024:.2f}" if stats.get('avg_throughput') else "N/A",
                     'Jumlah worker client sukses': stats['success_count'],
@@ -429,16 +439,23 @@ class Client:
         csv_file = self.save_results_to_csv(all_stats)
         self.cleanup()
         return csv_file
+    
+    def automate_stress_test(self):
+        # operations = ['list', 'get', 'upload']
+        operations = ['list']
+        file_sizes = [10, 100, 500]
+        client_pool_sizes = [1, 5, 10]
+        executor_types = ['thread', 'process']
+        csv_file = self.perform_stress_test(operations, file_sizes, client_pool_sizes, executor_types)
+        logging.info(f"Stress test completed. Results saved to {csv_file}")
+        return csv_file
+
 
 
 if __name__ == "__main__":
     client = Client(server_address=('localhost', 6666))
     # res = client.run_test('upload', 10, 10, executor_type='thread')
-    res = client.perform_stress_test(
-        operations=['upload', 'get', 'list'],
-        file_sizes=[10],
-        client_pool_sizes=[10],
-        executor_types=['thread', 'process']
-    )
+    client.set_server_config()
+    res = client.automate_stress_test()
     # res = json.dumps(res, indent=4)
     # print(res)

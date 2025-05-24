@@ -78,8 +78,8 @@ class Server(Process):
 
 def main():
     logging.basicConfig(level=logging.WARNING, format='%(levelname)s - %(message)s')
-    
-    svr = Server(ipaddress='0.0.0.0', port=6666, max_processes=20)
+    process_worker = int(input("Enter number of processes to handle clients (default 10): "))
+    svr = Server(ipaddress='0.0.0.0', port=6666, max_processes=process_worker or 20)
     svr.start()
     
     try:

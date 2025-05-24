@@ -60,7 +60,8 @@ class Server(threading.Thread):
 
 def main():
     # server with 20 worker
-    svr = Server(ipaddress='0.0.0.0', port=6666, max_workers=20)
+    process_worker = int(input("Enter number of processes to handle clients (default 10): "))
+    svr = Server(ipaddress='0.0.0.0', port=6666, max_workers=process_worker)
     svr.start()
 
     try:
