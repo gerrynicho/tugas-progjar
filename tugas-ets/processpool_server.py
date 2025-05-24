@@ -16,7 +16,7 @@ def ProcessTheClient(connection, address):
     data_received = ""
     try:
         while True:
-            data = connection.recv(32)
+            data = connection.recv(1024 * 1024)  # 1MB buffer size
             if data:
                 d = data.decode()
                 data_received += d

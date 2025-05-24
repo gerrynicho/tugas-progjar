@@ -6,11 +6,15 @@ from glob import glob
 
 class FileInterface:
     def __init__(self):
-        os.chdir('files/')
+        self.file_path = 'files/'
+        if not os.path.exists(self.file_path):
+            os.makedirs(self.file_path)
+        # os.chdir('files/')
 
     def list(self,params=[]):
         try:
-            filelist = glob('*.*')
+            filelist = glob(os.path.join(self.file_path, '*.*'))
+            filelist = [os.path.basename(f) for f in filelist]  # Get only filenames
             return dict(status='OK',data=filelist)
         except Exception as e:
             return dict(status='ERROR',data=str(e))
@@ -20,7 +24,7 @@ class FileInterface:
             filename = params[0]
             if (filename == ''):
                 return None
-            fp = open(f"{filename}",'rb')
+            fp = open(os.path.join(self.file_path, filename),'rb')
             isifile = base64.b64encode(fp.read()).decode()
             return dict(status='OK',data_namafile=filename,data_file=isifile)
         except Exception as e:
@@ -28,7 +32,8 @@ class FileInterface:
         
     def upload(self, params=[]):
         try:
-            filelist = glob('*.*')
+            filelist = glob(os.path.join(self.file_path, '*.*'))
+            filelist = [os.path.basename(f) for f in filelist]  # Get only filenames
             before_sum = len(filelist)    
         
             filename = params[0]
@@ -45,11 +50,11 @@ class FileInterface:
                 return dict(status='ERROR',data='file tidak ada isinya')
 
 
-            with open(filename, 'wb') as fp:
+            with open(os.path.join(self.file_path, filename), 'wb') as fp:
                 fp.write(base64.b64decode(params[1]))
                 fp.close()
             
-            filelist = glob('*.*')
+            filelist = glob(os.path.join(self.file_path, '*.*'))
             after_sum = len(filelist)
 
             return dict(status='OK',data_namafile=filename, sum=(before_sum, after_sum))
@@ -58,19 +63,19 @@ class FileInterface:
     
     def delete(self, params=[]):
         try:
-            filelist = glob('*.*')
+            filelist = glob(os.path.join(self.file_path, '*.*'))
             before_sum = len(filelist)
 
             filename = params[0]
             if (filename == ''):
                 return None
-            if not os.path.exists(filename):
+            if not os.path.exists(os.path.join(self.file_path, filename)):
                 return dict(status='ERROR',data='file tidak ditemukan')
             elif before_sum == 0:
                 return dict(status='ERROR',data='tidak ada file di server')
-            os.remove(filename)
+            os.remove(os.path.join(self.file_path, filename))
 
-            filelist = glob('*.*')
+            filelist = glob(os.path.join(self.file_path, '*.*'))
             after_sum = len(filelist)
 
             return dict(status='OK',data_namafile=filename, sum=(before_sum, after_sum))

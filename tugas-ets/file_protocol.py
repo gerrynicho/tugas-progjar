@@ -22,7 +22,7 @@ class FileProtocol:
     def __init__(self):
         self.file = FileInterface()
     def proses_string(self,string_datamasuk=''):
-        logging.warning(f"string diproses: {string_datamasuk}")
+        logging.warning(f"string diproses: {string_datamasuk[:100]}...")  # Log first 100 characters
 
         c = ""
         params = []
