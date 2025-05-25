@@ -1,302 +1,58 @@
-2025-05-25 02:52:45,293 - INFO - Starting list test with file size 10MB, client pool size 1, executor type thread
-2025-05-25 02:52:45,297 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,297 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:45,297 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,297 - INFO - Starting list test with file size 10MB, client pool size 1, executor type process
-2025-05-25 02:52:45,304 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,306 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:45,306 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,306 - INFO - Starting list test with file size 10MB, client pool size 5, executor type thread
-2025-05-25 02:52:45,308 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,308 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,309 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,309 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,310 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,311 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:45,311 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,311 - INFO - Starting list test with file size 10MB, client pool size 5, executor type process
-2025-05-25 02:52:45,321 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,321 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,322 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,322 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,322 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,324 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:45,324 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,324 - INFO - Starting list test with file size 10MB, client pool size 10, executor type thread
-2025-05-25 02:52:45,326 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,327 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,327 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,327 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:45,328 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,328 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:45,328 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,328 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:45,329 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:45,329 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:45,329 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:45,329 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,330 - INFO - Starting list test with file size 10MB, client pool size 10, executor type process
-2025-05-25 02:52:45,340 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,341 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,341 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,341 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,342 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:45,342 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,343 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:45,343 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:45,343 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:45,343 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:45,347 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:45,347 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,347 - INFO - Starting list test with file size 100MB, client pool size 1, executor type thread
-2025-05-25 02:52:45,348 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,348 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:45,348 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,349 - INFO - Starting list test with file size 100MB, client pool size 1, executor type process
-2025-05-25 02:52:45,354 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,357 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:45,358 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,358 - INFO - Starting list test with file size 100MB, client pool size 5, executor type thread
-2025-05-25 02:52:45,360 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,361 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,361 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,362 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,362 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,364 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:45,364 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,364 - INFO - Starting list test with file size 100MB, client pool size 5, executor type process
-2025-05-25 02:52:45,375 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,375 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,375 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,375 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,376 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,378 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:45,378 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,378 - INFO - Starting list test with file size 100MB, client pool size 10, executor type thread
-2025-05-25 02:52:45,380 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,380 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,381 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,381 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:45,382 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,382 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,383 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:45,383 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:45,383 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:45,383 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:45,384 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:45,384 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:45,384 - INFO - Starting list test with file size 100MB, client pool size 10, executor type process
-2025-05-25 02:52:45,398 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:45,398 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:45,398 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:45,400 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:45,402 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:45,402 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:45,402 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:45,402 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:45,404 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:46,459 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:46,462 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:46,462 - INFO - Average duration: 0.11s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,462 - INFO - Starting list test with file size 500MB, client pool size 1, executor type thread
-2025-05-25 02:52:46,463 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,463 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:46,463 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,464 - INFO - Starting list test with file size 500MB, client pool size 1, executor type process
-2025-05-25 02:52:46,467 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,468 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:52:46,468 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,468 - INFO - Starting list test with file size 500MB, client pool size 5, executor type thread
-2025-05-25 02:52:46,470 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:46,470 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,470 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:46,471 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:46,471 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:46,471 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:46,472 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,472 - INFO - Starting list test with file size 500MB, client pool size 5, executor type process
-2025-05-25 02:52:46,482 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:46,482 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:46,482 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,483 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:46,483 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:46,489 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:52:46,489 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,489 - INFO - Starting list test with file size 500MB, client pool size 10, executor type thread
-2025-05-25 02:52:46,492 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:46,494 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:46,494 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,495 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:46,495 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:46,495 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:46,496 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:46,496 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:46,496 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:46,496 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:46,497 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:46,497 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:52:46,497 - INFO - Starting list test with file size 500MB, client pool size 10, executor type process
-2025-05-25 02:52:46,510 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:52:46,511 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:52:46,513 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:52:46,516 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:52:46,516 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:52:46,517 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:52:46,517 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:52:46,518 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:52:46,518 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:52:46,518 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:52:46,524 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:52:46,524 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,526 - INFO - Starting list test with file size 10MB, client pool size 1, executor type thread
-2025-05-25 02:55:59,529 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,529 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,529 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,530 - INFO - Starting list test with file size 10MB, client pool size 1, executor type process
-2025-05-25 02:55:59,536 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,539 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,539 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,539 - INFO - Starting list test with file size 10MB, client pool size 5, executor type thread
-2025-05-25 02:55:59,543 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,544 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,544 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,544 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,544 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,545 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,545 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,545 - INFO - Starting list test with file size 10MB, client pool size 5, executor type process
-2025-05-25 02:55:59,555 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,555 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,555 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,555 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,556 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,558 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,558 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,558 - INFO - Starting list test with file size 10MB, client pool size 10, executor type thread
-2025-05-25 02:55:59,561 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,561 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,561 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,561 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,562 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,562 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,563 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,563 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,563 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,563 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,564 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,564 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,564 - INFO - Starting list test with file size 10MB, client pool size 10, executor type process
-2025-05-25 02:55:59,578 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,578 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,579 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,580 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,580 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,581 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,582 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,582 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,582 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,582 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,585 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,586 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,586 - INFO - Starting list test with file size 100MB, client pool size 1, executor type thread
-2025-05-25 02:55:59,587 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,587 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,587 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,587 - INFO - Starting list test with file size 100MB, client pool size 1, executor type process
-2025-05-25 02:55:59,590 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,592 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,592 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,592 - INFO - Starting list test with file size 100MB, client pool size 5, executor type thread
-2025-05-25 02:55:59,594 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,594 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,594 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,595 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,595 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,595 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,595 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,595 - INFO - Starting list test with file size 100MB, client pool size 5, executor type process
-2025-05-25 02:55:59,607 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,607 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,608 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,608 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,608 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,612 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,612 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,612 - INFO - Starting list test with file size 100MB, client pool size 10, executor type thread
-2025-05-25 02:55:59,614 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,616 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,617 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,617 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,617 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,617 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,617 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,618 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,618 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,618 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,619 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,619 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,619 - INFO - Starting list test with file size 100MB, client pool size 10, executor type process
-2025-05-25 02:55:59,633 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,635 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,635 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,637 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,637 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,637 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,639 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,639 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,639 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,639 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,646 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,646 - INFO - Average duration: 0.01s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,647 - INFO - Starting list test with file size 500MB, client pool size 1, executor type thread
-2025-05-25 02:55:59,648 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,648 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,648 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,648 - INFO - Starting list test with file size 500MB, client pool size 1, executor type process
-2025-05-25 02:55:59,652 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,654 - INFO - Test complete: 1 succeeded, 0 failed
-2025-05-25 02:55:59,654 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,654 - INFO - Starting list test with file size 500MB, client pool size 5, executor type thread
-2025-05-25 02:55:59,656 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,656 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,656 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,657 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,657 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,657 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,657 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,657 - INFO - Starting list test with file size 500MB, client pool size 5, executor type process
-2025-05-25 02:55:59,667 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,667 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,668 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,668 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,668 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,673 - INFO - Test complete: 5 succeeded, 0 failed
-2025-05-25 02:55:59,673 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,673 - INFO - Starting list test with file size 500MB, client pool size 10, executor type thread
-2025-05-25 02:55:59,675 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,678 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,678 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,679 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,680 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,680 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,680 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,681 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,681 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,681 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,682 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,682 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,682 - INFO - Starting list test with file size 500MB, client pool size 10, executor type process
-2025-05-25 02:55:59,697 - INFO - Worker 1 - LIST command successful, 6 files found
-2025-05-25 02:55:59,699 - INFO - Worker 4 - LIST command successful, 6 files found
-2025-05-25 02:55:59,699 - INFO - Worker 0 - LIST command successful, 6 files found
-2025-05-25 02:55:59,699 - INFO - Worker 2 - LIST command successful, 6 files found
-2025-05-25 02:55:59,700 - INFO - Worker 7 - LIST command successful, 6 files found
-2025-05-25 02:55:59,701 - INFO - Worker 5 - LIST command successful, 6 files found
-2025-05-25 02:55:59,701 - INFO - Worker 3 - LIST command successful, 6 files found
-2025-05-25 02:55:59,702 - INFO - Worker 6 - LIST command successful, 6 files found
-2025-05-25 02:55:59,702 - INFO - Worker 8 - LIST command successful, 6 files found
-2025-05-25 02:55:59,702 - INFO - Worker 9 - LIST command successful, 6 files found
-2025-05-25 02:55:59,709 - INFO - Test complete: 10 succeeded, 0 failed
-2025-05-25 02:55:59,709 - INFO - Average duration: 0.00s, Average throughput: 0.00 MB/s
-2025-05-25 02:55:59,710 - INFO - Results saved to results/stress_test_results_20250525-025559.csv
-2025-05-25 02:55:59,710 - INFO - Stress test completed. Results saved to results/stress_test_results_20250525-025559.csv
+2025-05-25 14:31:00,907 - INFO - Worker 16: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.17s (data transfer phase).
+2025-05-25 14:31:00,934 - INFO - Worker 3: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.23s (data transfer phase).
+2025-05-25 14:31:01,008 - INFO - Worker 4: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.29s (data transfer phase).
+2025-05-25 14:31:01,016 - INFO - Worker 2: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.30s (data transfer phase).
+2025-05-25 14:31:01,018 - INFO - Worker 13: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.28s (data transfer phase).
+2025-05-25 14:31:01,028 - INFO - Worker 36: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.23s (data transfer phase).
+2025-05-25 14:31:01,063 - INFO - Worker 34: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.27s (data transfer phase).
+2025-05-25 14:31:01,073 - INFO - Worker 14: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.34s (data transfer phase).
+2025-05-25 14:31:01,099 - INFO - Worker 24: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.33s (data transfer phase).
+2025-05-25 14:31:01,106 - INFO - Worker 22: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.34s (data transfer phase).
+2025-05-25 14:31:01,107 - INFO - Worker 44: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.29s (data transfer phase).
+2025-05-25 14:31:01,120 - ERROR - Worker 43: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,128 - ERROR - Worker 43: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,136 - INFO - Worker 42: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.32s (data transfer phase).
+2025-05-25 14:31:01,151 - INFO - Worker 15: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.41s (data transfer phase).
+2025-05-25 14:31:01,163 - INFO - Worker 35: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.37s (data transfer phase).
+2025-05-25 14:31:01,176 - INFO - Worker 23: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.41s (data transfer phase).
+2025-05-25 14:31:01,186 - INFO - Worker 33: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.40s (data transfer phase).
+2025-05-25 14:31:01,191 - INFO - Worker 6: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.48s (data transfer phase).
+2025-05-25 14:31:01,202 - ERROR - Worker 5: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,208 - ERROR - Worker 5: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,222 - ERROR - Worker 8: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,224 - ERROR - Worker 8: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,244 - INFO - Worker 37: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.44s (data transfer phase).
+2025-05-25 14:31:01,250 - INFO - Worker 17: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.51s (data transfer phase).
+2025-05-25 14:31:01,260 - INFO - Worker 7: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.54s (data transfer phase).
+2025-05-25 14:31:01,274 - INFO - Worker 25: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.51s (data transfer phase).
+2025-05-25 14:31:01,283 - INFO - Worker 47: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.47s (data transfer phase).
+2025-05-25 14:31:01,288 - INFO - Worker 11: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.56s (data transfer phase).
+2025-05-25 14:31:01,292 - INFO - Worker 10: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.56s (data transfer phase).
+2025-05-25 14:31:01,295 - INFO - Worker 26: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.52s (data transfer phase).
+2025-05-25 14:31:01,299 - INFO - Worker 1: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.59s (data transfer phase).
+2025-05-25 14:31:01,300 - INFO - Worker 29: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.52s (data transfer phase).
+2025-05-25 14:31:01,302 - ERROR - Worker 49: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,303 - INFO - Worker 46: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.49s (data transfer phase).
+2025-05-25 14:31:01,304 - ERROR - Worker 49: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,305 - ERROR - Worker 45: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,306 - ERROR - Worker 19: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,307 - ERROR - Worker 45: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,307 - ERROR - Worker 19: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,311 - INFO - Worker 12: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.58s (data transfer phase).
+2025-05-25 14:31:01,313 - ERROR - Worker 9: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,313 - ERROR - Worker 9: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,314 - ERROR - Worker 27: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,315 - ERROR - Worker 27: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,316 - INFO - Worker 21: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.55s (data transfer phase).
+2025-05-25 14:31:01,323 - INFO - Worker 30: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.53s (data transfer phase).
+2025-05-25 14:31:01,324 - INFO - Worker 20: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.56s (data transfer phase).
+2025-05-25 14:31:01,327 - ERROR - Worker 18: Connection closed by server during file data transfer of test_file_100mb.bin. Downloaded 104853599/104857600 bytes.
+2025-05-25 14:31:01,328 - ERROR - Worker 18: General error during GET for test_file_100mb.bin: Server closed connection (file data reception)
+2025-05-25 14:31:01,336 - INFO - Worker 40: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.53s (data transfer phase).
+2025-05-25 14:31:01,337 - INFO - Worker 28: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.56s (data transfer phase).
+2025-05-25 14:31:01,338 - INFO - Worker 41: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.53s (data transfer phase).
+2025-05-25 14:31:01,345 - INFO - Worker 0: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.65s (data transfer phase).
+2025-05-25 14:31:01,346 - INFO - Worker 32: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.55s (data transfer phase).
+2025-05-25 14:31:01,350 - INFO - Worker 38: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.54s (data transfer phase).
+2025-05-25 14:31:01,350 - INFO - Worker 39: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.54s (data transfer phase).
+2025-05-25 14:31:01,352 - INFO - Worker 31: Successfully downloaded 104857600 bytes for test_file_100mb.bin in 2.55s (data transfer phase).
