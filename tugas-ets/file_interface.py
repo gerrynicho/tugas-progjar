@@ -23,43 +23,33 @@ class FileInterface:
         try:
             filename = params[0]
             if (filename == ''):
-                return None
-            fp = open(os.path.join(self.file_path, filename),'rb')
-            isifile = base64.b64encode(fp.read()).decode()
-            return dict(status='OK',data_namafile=filename,data_file=isifile)
+                # Return an error dictionary consistent with other methods
+                return dict(status='ERROR', data='Filename cannot be empty')
+
+            file_path_full = os.path.join(self.file_path, os.path.basename(filename)) # Sanitize filename
+            
+            if not os.path.exists(file_path_full) or not os.path.isfile(file_path_full):
+                return dict(status='ERROR',data='File not found or is not a file')
+
+            filesize = os.path.getsize(file_path_full)
+            # Return metadata for streaming.
+            # 'OK_STREAM' is a new status to indicate that raw file data will follow the JSON response.
+            return dict(status='OK_STREAM', data_namafile=filename, data_filesize=filesize)
         except Exception as e:
             return dict(status='ERROR',data=str(e))
+
         
     def upload(self, params=[]):
         try:
-            filelist = glob(os.path.join(self.file_path, '*.*'))
-            filelist = [os.path.basename(f) for f in filelist]  # Get only filenames
-            before_sum = len(filelist)    
-        
             filename = params[0]
-
+            filename = os.path.join(self.file_path, os.path.basename(filename))  # Sanitize filename
             if (filename == ''):
-                return dict(status='ERROR',data='nama file tidak boleh kosong')
-            elif (filename in filelist):
-                return dict(status='ERROR',data='file sudah ada di server/sudah ada file dengan nama yang sama')
-            elif len(params) < 2:
-                return dict(status='ERROR',data='parameter tidak lengkap')
-            elif len(params) > 2:
-                return dict(status='ERROR',data='unexpected parameter')
-            elif not params[1]:
-                return dict(status='ERROR',data='file tidak ada isinya')
-
-
-            with open(os.path.join(self.file_path, filename), 'wb') as fp:
-                fp.write(base64.b64decode(params[1]))
-                fp.close()
-            
-            filelist = glob(os.path.join(self.file_path, '*.*'))
-            after_sum = len(filelist)
-
-            return dict(status='OK',data_namafile=filename, sum=(before_sum, after_sum))
+                return dict(status='ERROR', data='Nama file tidak boleh kosong')
+            fp = open(filename, 'wb')
+            fp.write(base64.b64decode(params[1]))
+            return dict(status='OK', data='File berhasil diupload')
         except Exception as e:
-            return dict(status='ERROR',data=str(e))
+            return dict(status='ERROR', data=str(e))
     
     def delete(self, params=[]):
         try:
