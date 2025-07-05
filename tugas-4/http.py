@@ -25,7 +25,7 @@ class HttpServer:
 		for kk in headers:
 			resp.append("{}:{}\r\n" . format(kk,headers[kk]))
 		resp.append("\r\n")
-		print(f"SEHARUSNYA PRINT INI {objectaddress}\n\n")
+		# print(f"SEHARUSNYA PRINT INI {objectaddress}\n\n")
 		response_headers=''
 		for i in resp:
 			response_headers="{}{}" . format(response_headers,i)
@@ -77,8 +77,10 @@ class HttpServer:
 		thedir='./uploads/'
 		if (object_address == '/'):
 			_, _, number_of_files = next(os.walk(thedir))
+			list_of_files = glob(thedir + '*')
+			list_of_files = "\n".join([f"- {file[10:]}" for file in list_of_files])
 			number_of_files = len(number_of_files)
-			return self.response(200,'OK',f'Jumlah file di dalam server adalah {number_of_files}',dict())
+			return self.response(200,'OK',f'Jumlah file di dalam server adalah {number_of_files}\nFile yang ada di dalam server:\n{list_of_files}',dict())
 
 		if (object_address == '/video'):
 			return self.response(302,'Found','',dict(location='https://youtu.be/katoxpnTf04'))
