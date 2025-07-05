@@ -120,9 +120,10 @@ def output(data_received):
     # logging.warning(f"PARSING DATA\n")
     parsed = parse(data_received)
     # print(parsed)
-    if parsed['status_code'] != '200' or parsed['status_code'] != '201':
+    if int(parsed['status_code']) > int('300'):
         print(f"HTTP Error {parsed['status_code']}: {parsed['status_message']}")
         return
+    print(f"HTTP Status {parsed['status_code']}: {parsed['status_message']}")
     headers = parsed['headers']
     body = parsed['body']
 
@@ -134,7 +135,7 @@ def output(data_received):
     content_type = headers.get('content-type', 'Unknown Content Type')
     # print(type(body))
     # print(body)
-    if 'placeholder' in object_address or 'deleted' in body:
+    if 'placeholder' in object_address or 'deleted' in body or parsed['status_code'] == '201':
         return 
     # print(f"{body}")
     # print(f"Date: {date}")
