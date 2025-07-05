@@ -9,7 +9,7 @@ from base64 import b64encode, b64decode
 server_address = ('www.its.ac.id', 443)
 server_address = ('www.ietf.org',443)
 server_address = ('0.0.0.0', 8885) # thread pool
-server_address = ('0.0.0.0', 8889) # process pool
+# server_address = ('0.0.0.0', 8889) # process pool
 
 def make_socket(destination_address='localhost', port=12000):
     try:
@@ -120,7 +120,7 @@ def output(data_received):
     # logging.warning(f"PARSING DATA\n")
     parsed = parse(data_received)
     # print(parsed)
-    if parsed['status_code'] != '200':
+    if parsed['status_code'] != '200' or parsed['status_code'] != '201':
         print(f"HTTP Error {parsed['status_code']}: {parsed['status_message']}")
         return
     headers = parsed['headers']
